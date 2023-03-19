@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e779d3dd-45a6-4d53-bcc5-13c8435281cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/app/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/misc/LoadingView.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/app/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/hobby/Hobbies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/hobby/Hobbies.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

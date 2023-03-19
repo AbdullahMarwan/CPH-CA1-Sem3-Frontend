@@ -3,6 +3,16 @@ import {Hobby} from "../../models/Hobby";
 import {ApiHelper} from "../../helpers/ApiHelper";
 import LoadingView from "../misc/LoadingView";
 
+import {
+    Link,
+    Table,
+    TableHead,
+    TableRow,
+    TableHeader,
+    TableBody,
+    TableCell
+} from "carbon-components-react";
+
 export default function Hobbies() {
     const [hobbies, setHobbies] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -26,8 +36,36 @@ export default function Hobbies() {
         <div>
             {!loading ?
                 <div>
-                    <h1>Hobby</h1>
+                    <h1>Hobbies</h1>
                     <div>
+                        <Table size="lg" useZebraStyles={false}>
+                            <TableHead>
+                                <TableRow>
+                                    {tableHeadings.map((header) => (
+                                        <TableHeader id={header.key} key={header}>{header}</TableHeader>
+                                    ))}
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {hobbies.map((row: Hobby) => (
+                                    <TableRow key={row.id}>{Object.keys(row)
+                                        //.filter((key) => key !== 'id')
+                                        .map((key) => {
+                                            return <TableCell key={key}>
+                                                {key == 'Link' ?
+                                                    <Link href={row[key]}>
+                                                        Link
+                                                    </Link>
+                                                    :
+                                                    row[key]
+                                                }
+                                            </TableCell>;
+                                        })}
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                        {/*
                         {
                             hobbies && hobbies.map((hobby: Hobby) => {
                                 return <div>
@@ -35,6 +73,7 @@ export default function Hobbies() {
                                 </div>
                             })
                         }
+                        */}
                     </div>
                 </div>
                 :
