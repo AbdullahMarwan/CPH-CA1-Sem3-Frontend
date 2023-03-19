@@ -1,6 +1,6 @@
 import {useState} from 'react'
-import './App.css'
-import Hobbies from "./components/hobby/Hobbies";
+import './App.scss'
+import Hobbies from "../hobby/Hobbies";
 
 function App() {
     return (

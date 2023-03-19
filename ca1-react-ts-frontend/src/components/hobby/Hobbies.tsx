@@ -1,10 +1,18 @@
 import {useEffect, useState} from "react";
 import {Hobby} from "../../models/Hobby";
 import {ApiHelper} from "../../helpers/ApiHelper";
+import LoadingView from "../misc/LoadingView";
 
 export default function Hobbies() {
     const [hobbies, setHobbies] = useState(null);
     const [loading, setLoading] = useState(true);
+
+    const tableHeadings = [
+        'ID',
+        'Link',
+        'Category',
+        'Type'
+    ];
 
     useEffect(() => {
         new ApiHelper().fetchHobbies()
@@ -30,7 +38,7 @@ export default function Hobbies() {
                     </div>
                 </div>
                 :
-                <p>loading</p>
+                <LoadingView/>
             }
         </div>
     )

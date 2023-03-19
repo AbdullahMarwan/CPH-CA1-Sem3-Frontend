@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e779d3dd-45a6-4d53-bcc5-13c8435281cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/hobby/Hobbies.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/helpers/ApiHelper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/models/Hobby.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/app/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/misc/LoadingView.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/hobby/Hobbies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/hobby/Hobbies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -45,6 +51,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/app" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
