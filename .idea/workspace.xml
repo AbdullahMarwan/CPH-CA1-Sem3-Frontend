@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e779d3dd-45a6-4d53-bcc5-13c8435281cf" name="Changes" comment="" />
+    <list default="true" id="e779d3dd-45a6-4d53-bcc5-13c8435281cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/components/hobby/Hobbies.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/helpers/ApiHelper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/models/Hobby.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ca1-react-ts-frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca1-react-ts-frontend/src/assets/react.svg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +21,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2N73heEFtaN67aFlJY8gC2SutWb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -29,7 +40,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.editor",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "/Users/abdullahmoussa/Documents/GitHubCPH/CPH-CA1-Sem3-Frontend/ca1-react-ts-frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -43,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679001414669</updated>
       <workItem from="1679001416691" duration="5739000" />
-      <workItem from="1679126331064" duration="3863000" />
+      <workItem from="1679126331064" duration="4172000" />
     </task>
     <servers />
   </component>
