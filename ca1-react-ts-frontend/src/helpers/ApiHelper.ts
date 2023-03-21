@@ -1,4 +1,5 @@
 import {Hobby} from "../models/Hobby";
+import {Person} from "../models/Person";
 
 export class ApiHelper {
     async fetchHobbies(): Promise<Hobby[]> {
@@ -7,5 +8,18 @@ export class ApiHelper {
             .then(hobbyData => {
                 return hobbyData;
             });
+    }
+
+    async submitPerson(person: Person) {
+        const requestOptions = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(person)
+        };
+
+        fetch('http://localhost:8080/persons/', requestOptions)
+            .then(response => response.json())
+            .then(data => console.log(data))
+        //.then(data => this.setState({postId: data.id}));
     }
 }

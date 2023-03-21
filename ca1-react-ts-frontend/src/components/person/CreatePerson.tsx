@@ -10,6 +10,8 @@ import {
     NumberInput,
 }
 from "carbon-components-react";
+import {ApiHelper} from "../../helpers/ApiHelper";
+import {Person} from "../../models/Person";
 
 type Inputs = {
     example: string,
@@ -19,7 +21,17 @@ type Inputs = {
 export default function CreatePerson() {
     const [loading, setLoading] = useState(false);
     const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
-    const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+    const onSubmit: SubmitHandler<Inputs> = (data) => {
+        new ApiHelper().submitPerson(
+            new Person(
+                data.firstName,
+                data.lastName,
+                data.email,
+                data.age,
+                0
+            )
+        )
+    };
 
     console.log(watch("example")) // watch input value by passing the name of it
     return (
