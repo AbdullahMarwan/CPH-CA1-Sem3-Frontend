@@ -24,13 +24,14 @@ import {
     Search,
     Switcher
 } from "@carbon/icons-react";
+import CreatePerson from "../person/CreatePerson";
 
-export default function NavigationBar() {
+export default function NavigationBar(props: Props<any>) {
     return (
         <HeaderContainer
             render={({isSideNavExpanded, onClickSideNavExpand}) => (
                 <>
-                    <Header aria-label="IBM Platform Name">
+                    <Header aria-label="CA1 Gruppe P">
                         <SkipToContent/>
                         <HeaderMenuButton
                             aria-label="Open menu"
@@ -38,70 +39,50 @@ export default function NavigationBar() {
                             onClick={onClickSideNavExpand}
                             isActive={isSideNavExpanded}
                         />
-                        <HeaderName href="#" prefix="IBM">
-                            [Platform]
+                        <HeaderName href="#" prefix="CA1">
+                            Gruppe P
                         </HeaderName>
-                        <HeaderNavigation aria-label="IBM [Platform]">
-                            <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
-                            <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
-                            <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
+                        <HeaderNavigation aria-label="CA1 Gruppe P">
+                            <HeaderMenuItem href="#">Home</HeaderMenuItem>
+                            <HeaderMenuItem href="#">About</HeaderMenuItem>
+                            {/*
                             <HeaderMenu aria-label="Link 4" menuLinkName="Link 4">
                                 <HeaderMenuItem href="#">Sub-link 1</HeaderMenuItem>
                                 <HeaderMenuItem href="#">Sub-link 2</HeaderMenuItem>
                                 <HeaderMenuItem href="#">Sub-link 3</HeaderMenuItem>
                             </HeaderMenu>
+                            */}
                         </HeaderNavigation>
                         <SideNav
                             aria-label="Side navigation"
                             isRail
                             expanded={isSideNavExpanded}
                             onOverlayClick={onClickSideNavExpand}>
+
                             <SideNavItems>
-                                <SideNavMenu renderIcon={Fade} title="Category title">
-                                    <SideNavMenuItem href="https://www.carbondesignsystem.com/">
-                                        Link
+                                <SideNavMenu renderIcon={Fade} title="Persons" large>
+                                    <SideNavMenuItem href="#">
+                                        All persons
                                     </SideNavMenuItem>
-                                    <SideNavMenuItem href="https://www.carbondesignsystem.com/">
-                                        Link
+                                   <SideNavMenuItem href="#">
+                                     Create person
+                                   </SideNavMenuItem>
+                                 </SideNavMenu>
+                                <SideNavMenu renderIcon={Fade} title="Hobbies" large>
+                                    <SideNavMenuItem href="#">
+                                        All hobbies
                                     </SideNavMenuItem>
-                                    <SideNavMenuItem href="https://www.carbondesignsystem.com/">
-                                        Link
-                                    </SideNavMenuItem>
-                                </SideNavMenu>
-                                <SideNavMenu renderIcon={Fade} title="Category title">
-                                    <SideNavMenuItem href="https://www.carbondesignsystem.com/">
-                                        Link
-                                    </SideNavMenuItem>
-                                    <SideNavMenuItem
-                                        aria-current="page"
-                                        href="https://www.carbondesignsystem.com/">
-                                        Link
-                                    </SideNavMenuItem>
-                                    <SideNavMenuItem href="https://www.carbondesignsystem.com/">
-                                        Link
+                                    <SideNavMenuItem href="#">
+                                        Create hobby
                                     </SideNavMenuItem>
                                 </SideNavMenu>
-                                <SideNavMenu renderIcon={Fade} title="Category title">
-                                    <SideNavMenuItem href="https://www.carbondesignsystem.com/">
-                                        Link
-                                    </SideNavMenuItem>
-                                    <SideNavMenuItem href="https://www.carbondesignsystem.com/">
-                                        Link
-                                    </SideNavMenuItem>
-                                    <SideNavMenuItem href="https://www.carbondesignsystem.com/">
-                                        Link
-                                    </SideNavMenuItem>
-                                </SideNavMenu>
-                                <SideNavLink
-                                    renderIcon={Fade}
-                                    href="https://www.carbondesignsystem.com/">
-                                    Link
+                                {/*}
+                                <SideNavLink renderIcon={Fade}
+                                             href="#"
+                                             large={true}>
+                                    Homepage
                                 </SideNavLink>
-                                <SideNavLink
-                                    renderIcon={Fade}
-                                    href="https://www.carbondesignsystem.com/">
-                                    Link
-                                </SideNavLink>
+                                */}
                             </SideNavItems>
                         </SideNav>
                     </Header>
