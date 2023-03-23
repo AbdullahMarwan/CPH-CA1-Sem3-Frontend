@@ -61,7 +61,7 @@ export default function App() {
                 <br/>
                 <br/>
 
-                <Column md={8} lg={12}>
+                <Column lg={16}>
                     <RouterProvider router={router}/>
                 </Column>
             </Grid>
