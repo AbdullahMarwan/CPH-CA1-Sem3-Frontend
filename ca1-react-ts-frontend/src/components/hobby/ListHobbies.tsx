@@ -13,7 +13,7 @@ import {
     TableCell
 } from "carbon-components-react";
 
-export default function Hobbies() {
+export default function ListHobbies() {
     const [hobbies, setHobbies] = useState(null);
     const [loading, setLoading] = useState(true);
 

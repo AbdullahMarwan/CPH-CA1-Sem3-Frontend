@@ -38,10 +38,6 @@ export default function CreatePerson() {
         <div>
             {!loading ?
                 <Stack gap={5}>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
                     <h1 style={{
                         fontFamily: "IBM Plex Mono",
                         fontWeight: 500

@@ -14,7 +14,7 @@ import {Hobby} from "../../models/Hobby";
 import LoadingView from "../misc/LoadingView";
 
 export default function FrontPage() {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     return (
         <div>

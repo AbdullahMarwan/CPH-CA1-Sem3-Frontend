@@ -25,8 +25,11 @@ import {
     Switcher
 } from "@carbon/icons-react";
 import CreatePerson from "../person/CreatePerson";
+import {Constants} from "../misc/Constants";
 
-export default function NavigationBar(props: Props<any>) {
+const constants = new Constants();
+
+export default function NavigationBar() {
     return (
         <HeaderContainer
             render={({isSideNavExpanded, onClickSideNavExpand}) => (
@@ -39,12 +42,11 @@ export default function NavigationBar(props: Props<any>) {
                             onClick={onClickSideNavExpand}
                             isActive={isSideNavExpanded}
                         />
-                        <HeaderName href="#" prefix="CA1">
+                        <HeaderName href={constants.NAVIGATION_PATH_FRONTPAGE} prefix="CA1">
                             Gruppe P
                         </HeaderName>
                         <HeaderNavigation aria-label="CA1 Gruppe P">
-                            <HeaderMenuItem href="#">Home</HeaderMenuItem>
-                            <HeaderMenuItem href="#">About</HeaderMenuItem>
+                            <HeaderMenuItem href={constants.NAVIGATION_PATH_FRONTPAGE}>Home</HeaderMenuItem>
                             {/*
                             <HeaderMenu aria-label="Link 4" menuLinkName="Link 4">
                                 <HeaderMenuItem href="#">Sub-link 1</HeaderMenuItem>
@@ -64,12 +66,12 @@ export default function NavigationBar(props: Props<any>) {
                                     <SideNavMenuItem href="#">
                                         All persons
                                     </SideNavMenuItem>
-                                   <SideNavMenuItem href="#">
+                                   <SideNavMenuItem href={constants.NAVIGATION_PATH_CREATE_PERSON}>
                                      Create person
                                    </SideNavMenuItem>
                                  </SideNavMenu>
-                                <SideNavMenu renderIcon={Fade} title="Hobbies" large>
-                                    <SideNavMenuItem href="#">
+                                <SideNavMenu renderIcon={Fade} title="ListHobbies" large>
+                                    <SideNavMenuItem href={constants.NAVIGATION_PATH_LIST_HOBBIES}>
                                         All hobbies
                                     </SideNavMenuItem>
                                     <SideNavMenuItem href="#">
