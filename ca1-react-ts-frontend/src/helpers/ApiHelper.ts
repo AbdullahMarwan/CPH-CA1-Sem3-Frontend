@@ -28,6 +28,7 @@ export class ApiHelper {
         fetch('http://localhost:8080/persons/', requestOptions)
             .then(response => response.json())
             .then(data => console.log(data))
+        //TODO Read response from server and parse to CreatePerson component
         //.then(data => this.setState({postId: data.id}));
     }
 }

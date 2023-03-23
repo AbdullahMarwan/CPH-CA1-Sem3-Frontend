@@ -18,11 +18,11 @@ export default function ListPersons() {
     const [loading, setLoading] = useState(true);
 
     const tableHeadings = [
-        'ID',
         'Firstname',
         'Lastname',
         'Email',
-        'Age'
+        'Age',
+        'ID',
     ];
 
     useEffect(() => {
