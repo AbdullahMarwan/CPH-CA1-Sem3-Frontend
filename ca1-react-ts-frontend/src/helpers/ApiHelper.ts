@@ -10,6 +10,14 @@ export class ApiHelper {
             });
     }
 
+    async fetchPersons(): Promise<Person[]> {
+        return fetch('http://localhost:8080/persons/')
+            .then(res => res.json())
+            .then(personData => {
+                return personData;
+            });
+    }
+
     async submitPerson(person: Person) {
         const requestOptions = {
             method: 'POST',

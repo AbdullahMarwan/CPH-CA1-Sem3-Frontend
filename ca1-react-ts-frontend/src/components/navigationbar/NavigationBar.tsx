@@ -63,14 +63,14 @@ export default function NavigationBar() {
 
                             <SideNavItems>
                                 <SideNavMenu renderIcon={Fade} title="Persons" large>
-                                    <SideNavMenuItem href="#">
+                                    <SideNavMenuItem href={constants.NAVIGATION_PATH_LIST_PERSONS}>
                                         All persons
                                     </SideNavMenuItem>
                                    <SideNavMenuItem href={constants.NAVIGATION_PATH_CREATE_PERSON}>
                                      Create person
                                    </SideNavMenuItem>
                                  </SideNavMenu>
-                                <SideNavMenu renderIcon={Fade} title="ListHobbies" large>
+                                <SideNavMenu renderIcon={Fade} title="Hobbies" large>
                                     <SideNavMenuItem href={constants.NAVIGATION_PATH_LIST_HOBBIES}>
                                         All hobbies
                                     </SideNavMenuItem>
